@@ -10,70 +10,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://file.myfontastic.com/8DiLRiL4HZST7scut6HsaY/icons.css" rel="stylesheet">
 </head>
-<body>
+<body class="primary">
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a id="theme-toggle"><span class="material-symbols-rounded">light_mode</span></a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="fade-in">
-        <div class="content">
+    <section id="home" class="home fade-in primary">
+        <div class="content primary">
             <h1>Hello, I'm <span class="name">Adhviklal Thoppe</span></h1>
             <div class="buttons">
-                <a href="https://github.com/UniqueRed" class="btn"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/adhviklal-thoppe" class="btn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://uniquered.itch.io" class="btn"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://github.com/UniqueRed" class="btn secondary"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/adhviklal-thoppe" class="btn secondary"><i class="fab fa-linkedin"></i></a>
+                <a href="https://uniquered.itch.io" class="btn secondary"><i class="fa-brands fa-itch-io"></i></a>
                 <!-- <a href="https://twitter.com/YourTwitter" class="btn"><i class="fa-solid fa-envelope"></i></a> -->
             </div>
             <div class="buttons">
-                <a href="https://github.com/YourGithub" class="btn" style="width: 200px">My Resume</a>
+                <a href="https://github.com/YourGithub" class="btn secondary" style="width: 200px; color: #ff3c3c">My Resume</a>
             </div>
         </div>
     </section>
 
     <section id="about" class="fade-in">
-        <div class="content">
+        <div class="content primary">
             <h2>About Me</h2>
-            <p>A brief description of who you are and what you do. Mention your skills, experience, and what makes you unique.</p>
+            <p>My name is Adhviklal Thoppe and I am a freshman at the University of Wisconsin-Madison. I am currently pursuing a double major in Computer Science B.S. and Data Science B.S.
+                My goal as a software engineer is to develop solutions that can benefit society and make a revolutionary impact on the world.
+            </p>
         </div>
     </section>
     
-    <section id="skills">
+    <section id="skills" class="fade-in">
         <div class="skills-section">
             <h2>Languages</h2>
             <div class="skills-list">
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-python"></i>
                     <p>Python</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-html5"></i>
                     <p>HTML5</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-css3-alt"></i>
                     <p>CSS3</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-js-square"></i>
                     <p>JavaScript</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-java"></i>
                     <p>Java</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fa-solid fa-code"></i>
                     <p>C#</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fi fi-brands-postgre"></i>
                     <p style="margin-top: -15px;">PostgreSQL</p>
                 </div>
@@ -82,23 +86,23 @@
         <div class="skills-section">
             <h2>Frameworks</h2>
             <div class="skills-list">
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-react"></i>
                     <p>React</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-node-js"></i>
                     <p>Node.js</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-aws"></i>
                     <p>AWS</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-docker"></i>
                     <p>Docker</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item secondary">
                     <i class="fab fa-git-alt"></i>
                     <p>Git</p>
                 </div>
@@ -109,12 +113,12 @@
     <section id="projects" class="fade-in">
         <div class="content">
             <h2>My Projects</h2>
-            <div class="project-card">
+            <div class="project-card tertiary">
                 <div class="project-info">
                     <div class="project-title">
                         <h3>Wingman</h3>
                         <h4>Comprehensive Event Management</h4>
-                        <a class="project-button"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="project-button quaternary"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <div class="project-description">
                         <p>I independently designed, developed, and deployed a full-stack application called Wingman, which consolidates currently active events into one accessible location.
@@ -126,23 +130,23 @@
                 </div>
                 <p style="text-align: center; font-size: 18px;">Technology Used:</p>
                 <div class="project-tools">
-                    <div class="tech-icon"><i class="fa-brands fa-react"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-node-js"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-css3-alt"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-docker"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-aws"></i></div>
-                    <div class="tech-icon"><i style="margin-top: 10px;" class="fi fi-brands-postgre"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-html5"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-js"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-git-alt"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-react"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-node-js"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-docker"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-aws"></i></div>
+                    <div class="tech-icon quaternary"><i style="margin-top: 10px;" class="fi fi-brands-postgre"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-html5"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-js"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-git-alt"></i></div>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card tertiary">
                 <div class="project-info">
                     <div class="project-title">
                         <h3>ML Hand Tracking</h3>
                         <h4>Hand Tracking Model Using Computer Vision and Machine Learning</h4>
-                        <a href="https://github.com/UniqueRed/Hand-Tracking" class="project-button"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/UniqueRed/Hand-Tracking" class="project-button quaternary"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="project-description">
                         <p>I created a real-time hand tracking model using Machine Learning and Computer Vision.
@@ -152,15 +156,15 @@
                 </div>
                 <p style="text-align: center; font-size: 18px;">Technology Used:</p>
                 <div class="project-tools">
-                    <div class="tech-icon"><i class="fa-brands fa-python"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-python"></i></div>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card tertiary">
                 <div class="project-info">
                     <div class="project-title">
                         <h3>Games With Unity</h3>
                         <h4>Independently Developed Games</h4>
-                        <a href="https://uniquered.itch.io" class="project-button"><i class="fab fa-itch-io"></i></a>
+                        <a href="https://uniquered.itch.io" class="project-button quaternary"><i class="fab fa-itch-io"></i></a>
                     </div>
                     <div class="project-description">
                         <p>I developed some 3D games called Meteor Madness and Aigg from the ground up, including graphical assets, music, and sound effects.
@@ -170,18 +174,19 @@
                 </div>
                 <p style="text-align: center; font-size: 18px;">Technology Used:</p>
                 <div class="project-tools">
-                    <div class="tech-icon"><i class="fa-brands fa-unity"></i></div>
-                    <div class="tech-icon"><i class="icon-blender"></i></div>
-                    <div class="tech-icon"><i class="icon-c-sharp"></i></div>
-                    <div class="tech-icon"><i class="icon-fl-studio"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-unity"></i></div>
+                    <div class="tech-icon quaternary"><i class="icon-blender"></i></div>
+                    <div class="tech-icon quaternary"><i class="icon-c-sharp"></i></div>
+                    <div class="tech-icon quaternary"><i class="icon-fl-studio"></i></div>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card tertiary">
                 <div class="project-info">
                     <div class="project-title">
                         <h3>Symplenote</h3>
                         <h4>Notes Made Simple</h4>
-                        <a href="https://symplenote-web.vercel.app" class="project-button"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://symplenote-web.vercel.app" class="project-button quaternary"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/UniqueRed/SymplenoteWeb" class="project-button quaternary"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="project-description">
                         <p>Symplenote is an online notes app that focuses on minimalism and customizability. You can save notes directly to your computer and also upload text files
@@ -191,37 +196,38 @@
                 </div>
                 <p style="text-align: center; font-size: 18px;">Technology Used:</p>
                 <div class="project-tools">
-                    <div class="tech-icon"><i class="fa-brands fa-html5"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-css3-alt"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-js"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-html5"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-js"></i></div>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card tertiary">
                 <div class="project-info">
                     <div class="project-title">
                         <h3>Random Color Generator</h3>
                         <h4>Color Your World</h4>
-                        <a href="https://minimalist-randomcolor.vercel.app" class="project-button"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://minimalist-randomcolor.vercel.app" class="project-button quaternary"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/UniqueRed/RandomColor" class="project-button quaternary"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="project-description">
-                        <p>Random color generators are simple programs that need to be kept SIMPLE. My version of this generator focuses on the key aspect of simplicity when trying to find
-                            random colors. It provides you with the hexadecimal code as well as the RGB values for each random color. You can copy these values to your clipboard simply by clicking the
-                            corresponding button. To generate a new color, click anywhere on the screen or press space.
+                        <p>My random color generator focuses on the key aspect of simplicity when trying to find random colors. It provides you with the hexadecimal code as well as the RGB values
+                            for each random color. Nothing more, nothing less. You can copy these values to your clipboard simply by clicking the corresponding button. To generate a new color, click
+                            anywhere on the screen or press space.
                         </p>
                     </div>
                 </div>
                 <p style="text-align: center; font-size: 18px;">Technology Used:</p>
                 <div class="project-tools">
-                    <div class="tech-icon"><i class="fa-brands fa-html5"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-css3-alt"></i></div>
-                    <div class="tech-icon"><i class="fa-brands fa-js"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-html5"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="tech-icon quaternary"><i class="fa-brands fa-js"></i></div>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
