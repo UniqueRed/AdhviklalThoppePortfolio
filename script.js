@@ -44,7 +44,7 @@ document.getElementById("theme-toggle").addEventListener('click', () => {
         localStorage.setItem("atporttheme", "dark");
         document.querySelector("#theme-toggle span").innerHTML = "light_mode";
     }
-})
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -55,3 +55,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+scrollButton = document.getElementById("scroll-top")
+
+window.onscroll = function() {displayScrollTop()};
+
+function displayScrollTop() {
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.style.transform = "scale(1)";
+    }
+    else {
+        scrollButton.style.transform = "scale(0)";
+    }
+}
+
+scrollButton.addEventListener('click', () => {
+    scrollButton.style.transform = "scale(0)";
+    window.scrollTo({top: 0, behavior: 'smooth'});
+})
