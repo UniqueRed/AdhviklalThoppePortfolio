@@ -78,6 +78,17 @@ nav ul {
     padding-right: 2rem;
 }
 
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+nav li:hover #underline{
+    width: 150%;
+}
+
 nav a {
     color: var(--text-color);
     text-decoration: none;
@@ -86,11 +97,13 @@ nav a {
     border-bottom: 2px solid transparent;
     transition: 250ms;
     cursor: pointer;
-    padding: 5px;
 }
 
-nav a:hover {
-    border-bottom: 2px solid var(--accent-color);
+#underline {
+    height: 2px;
+    width: 0%;
+    background-color: var(--accent-color);
+    transition: 250ms;
 }
 
 #theme-toggle {
